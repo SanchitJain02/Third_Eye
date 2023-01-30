@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1bc697dbcc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Social Distancing</title>
+</head>
+
+<body>
+    <section>
+        <div class="header-container">
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#result">Result</a>
+                        </li>
+                        <li>
+                            <a href="#libraries">Libraries</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1>Social Distancing</h1>
+                    <h3>Module -- <span>Third Eye Project</span></h3>
+                    <br>
+                    <a href="#about" class="btn">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----ABOUT PAGE----->
+    <div class="container">
+        <section class="about" id="about">
+            <div class="row">
+                <div class="content">
+                    <h3 class = "wow animate__animated animate__slideInLeft">About Social Distancing ?</h3>
+                    <p class = "wow animate__animated animate__slideInRight">Nowadays because of Covid-19 virus, social distancing is must at every place so that we don’t get effected with the virus. To maintain social distancing, one method is to physically check everything at every moment. This method is time consuming and also need human labour to do so. Another method is to use AI enabled camera for checking social distancing. 
+                        We are using this module in our project. This module can be used in various public places to avoid risk of the virus and for easy maintance of the place. 
+                        This will reduce the work of the security guards appointed at various places. 
+                        </p>
+                    <a href="#result" class="btn wow animate__animated animate__slideInLeft">Result</a>
+                </div>
+            </div>
+        </section>
+    </div>    
+
+
+    <!----RESULT----->
+    <div class="container">
+        <section class="result" id="result">
+            <div class="row">
+                <div class="content">
+                    <h3 class = "wow animate__animated animate__rubberBand">Result</h3>
+                    <div class="video-container wow animate__animated  animate__zoomIn">
+                        <video src="output.mp4" loop autoplay muted></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!----LIBRARIES----->
+    <div class="container wow animate__animated  animate__bounce">
+        <section class="libraries" id="libraries">
+            <div class="row">
+                <div class="content">
+                    <h3>Libraries</h3>
+                    <!-- <div class="wrapper">
+                <div class="wrapper-holder">
+                    <div id="slider-img-1"></div>
+                    <div id="slider-img-2"></div>
+                </div>
+            </div>
+            <div class="button-holder">
+                <a href="#slider-img-1" class="button"></a>
+                <a href="#slider-img-2" class="button"></a>
+            </div> -->
+
+                    <div class="owl-carousel owl-theme">
+                        <div class="item"><img src="opencv-cpp.png"></div>
+                        <div class="item"><img src="deepthai.png"></div>
+                        <div class="item"><img src="blobconvertor.png"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="footer" id="footer">
+      </section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoHeight: true,
+            items: 2,
+            lazyLoad: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW().init();
+        </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

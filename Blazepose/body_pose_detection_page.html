@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1bc697dbcc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Body Pose Detection</title>
+</head>
+
+<body>
+    <section>
+        <div class="header-container">
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#result">Result</a>
+                        </li>
+                        <li>
+                            <a href="#libraries">Libraries</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1>Body Pose Detection</h1>
+                    <h3>Module -- <span>Third Eye Project</span></h3>
+                    <br>
+                    <a href="#about" class="btn">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----ABOUT PAGE----->
+    <div class="container">
+        <section class="about" id="about">
+            <div class="row">
+                <div class="content">
+                    <h3>About Body Pose Detection ?</h3>
+                    <p>Many people suffer from back pain or any type of body pain. They are told to do exercise 
+                        for the recovery of that injury or that diseases. Everyone donot know at what angel a person 
+                        should perform an exercise, so they do it in a wrong way or in a very dangerous way. This 
+                        project can help them by telling the angel of their body and warning them to be in limits 
+                        while doing some kind of exercise. Suppose a person have to do a back stretch and donot know at what angel they should do it, this device will tell them when they are exceeding the 
+                        maximum angle of safety.
+                    </p>
+                    <a href="#result" class="btn">Result</a>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <!----RESULT----->
+    <div class="container">
+    <section class="team-section" id="result">
+        <h3>Result</h3>
+        <div class="video-container">
+            <video src="Trail_vid.mp4" loop autoplay muted></video>
+        </div>
+    </section>
+    </div>
+
+    <!----LIBRARIES----->
+    <div class = container>
+    <section class="portfolio" id="libraries">
+        <h3>Libraries</h3>
+        <div class="container">
+            <!-- <div class="wrapper">
+                <div class="wrapper-holder">
+                    <div id="slider-img-1"></div>
+                    <div id="slider-img-2"></div>
+                </div>
+            </div>
+            <div class="button-holder">
+                <a href="#slider-img-1" class="button"></a>
+                <a href="#slider-img-2" class="button"></a>
+            </div> -->
+
+            <div class="owl-carousel owl-theme" >
+                <div class="item"><img src="opencv-cpp.png"></div>
+                <div class="item"><img src="deepthai.png"></div>
+                <div class="item"><img src="blobconvertor.png"></div>
+            </div>
+            
+        </div>
+    </section>
+</div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoHeight:true,
+    items:2,
+    lazyLoad:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
